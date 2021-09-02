@@ -1,2 +1,2 @@
-# Rust-Handson
-Rust exercism implementations
+# Rust Implementations
+Implementation of primitive exercises using Rust programming language.
