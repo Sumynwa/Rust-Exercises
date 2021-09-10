@@ -2,11 +2,15 @@ A simple database interaction implementation using actix-web framework and diese
 
 Database setup using diesel-cli
 ==============================
-> cargo install diesel_cli --no-default-features --features sqlite
-> echo DATABASE_URL=test.db > .env
-> diesel setup
-> diesel migration generate create_users
-> diesel migration run
+cargo install diesel_cli --no-default-features --features sqlite
+
+echo DATABASE_URL=test.db > .env
+
+diesel setup
+
+diesel migration generate create_users
+
+diesel migration run
 
 Get/Post requests for setting/fetching a user
 =============================================
